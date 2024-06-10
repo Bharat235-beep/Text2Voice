@@ -1,0 +1,128 @@
+* {
+    margin: 0px 0px;
+}
+
+body {
+    /* background-color: rgb(172, 255, 127); */
+    background-image: linear-gradient(45deg, black, blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container form h1 {
+    text-wrap: wrap;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1 span {
+    color: red;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#InputTextBox {
+    width: 30rem;
+    height: 20rem;
+    resize: none;
+    outline: none;
+    border-radius: 20px;
+    border-color: transparent;
+    padding: 10px 10px;
+    font-size: larger;
+}
+
+textarea::placeholder {
+ color: rgb(88, 88, 168);
+}
+
+.btn {
+
+    border-radius: 20px;
+    margin: 1rem 1rem;
+    width: 100px;
+    height: 40px;
+}
+
+i {
+    margin: 2px 2px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#listen {
+    color: white;
+    background-color: blue;
+}
+
+#pause {
+    color: white;
+    background-color: red;
+}
+
+#resume {
+    color: white;
+    background-color: green;
+}
+
+#listen:focus {
+    background-color: white;
+    color: black;
+}
+
+#pause:focus {
+    background-color: white;
+    color: black;
+}
+
+#resume:focus {
+    background-color: white;
+    color: black;
+}
+
+select {
+    margin-top: 2rem;
+    width: 28rem;
+    height: 2rem;
+    outline: none;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:490px) {
+    #InputTextBox {
+        width: 20rem;
+        height: 18rem;
+    }
+
+    .container {
+        width: 28rem;
+    }
+
+    select {
+        width: 26rem;
+    }
+}

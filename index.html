@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert to Voice </title>
+    <script src="speech.js"></script>
+    <script src="https://kit.fontawesome.com/94b2be07af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="logVoices()">
+    <div class="container">
+        <form >
+            <h1>Text To Voice <span>Converter</span></h1>
+<textarea name="textbox" id="InputTextBox" placeholder="Write something here...."></textarea>
+<select name="voicesDropdown" id="voicesDropdown" >select</select>
+<div class="btn-group">
+    <button type="button" id="listen" class="btn" onclick="convertToVoice(textbox.value)"><i class="fa-solid fa-volume-high"></i> Listen</button>
+    <button type="button" id="pause" class="btn" onclick="mypause()"><i class="fa-solid fa-pause"></i> Pause</button>
+    <button type="button" id="resume" class="btn" onclick="myresume()"><i class="fa-solid fa-play"></i> Resume</button>
+
+
+
+</div>
+        </form>
+</div>
+</body>
+</html>
