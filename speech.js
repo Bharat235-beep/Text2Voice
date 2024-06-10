@@ -35,9 +35,17 @@ function mypause() {
   }
 }
 //resume voice
-const myresume = () => {
+ const myresume = () => {
+   if (window.speechSynthesis.paused) {
+     window.speechSynthesis.resume();
+   }
+ }
+let resumeBtn=document.getElementById('resume')
+console.log(resumeBtn)
+resumeBtn.addEventListener('click', () => {
   if (window.speechSynthesis.paused) {
     window.speechSynthesis.resume();
+    console.log("Speech resumed");
   }
-}
+});
 
