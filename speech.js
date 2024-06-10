@@ -36,9 +36,9 @@ function mypause() {
 }
 //resume voice
  const myresume = () => {
-   if (window.speechSynthesis.paused) {
+  
      window.speechSynthesis.resume();
-   }
+   
  }
 let resumeBtn=document.getElementById('resume')
 console.log(resumeBtn)
